@@ -1,3 +1,16 @@
 #send {
-    display: inline-block;
+    display: inline;
+    
+}
+
+#main {
+    /*text-align: center;*/
+    position: fixed;
+    bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 2rem;
+    /*margin-left: 100px;*/
+    border-top: 3px inset lightgrey;
+    width: 100%;
 }
