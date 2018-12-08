@@ -8,19 +8,43 @@
 
 <body>
 
-    <div class="jumbotron">
-        <h1>.IO Chat</h1>
-        <h4>Chat with (almost) everyone</h4>
+    <div id="sidebar">
+        <ul>
+            <li class="usr">--User connected--</li>
+        </ul>
     </div>
 
-    <div >
-        <div id="main">
-            <input type="text" id="host" name="host" placeholder="Sois pas timide poto" required>
+    <div id="container">
+        <div class="jumbotron">
+            <h1>.IO Chat</h1>
+            <h4>Chat with (almost) everyone</h4>
+        </div>
+
+        <div>
+            <ul id="chat">
+                <li>lol</li>
+                <li>bite</li>
+            </ul>
+        </div>
+
+
+        <div id="typearea">
+            <input type="text" id="type" placeholder="Sois pas timide poto" required>
             <button class="btn btn-primary" id="send">Send</button>
         </div>
-    </div>
 
+        <div id="whoo">
+            <input type="text" class="form-control" placeholder="T'es qui fdp ?" id="who">
+            <button id="register" class="form-control">C'est moi</button>
+        </div>
+
+    </div>
     <script src="../libs/bootrap/js/bootstrap.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../libs/js.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>

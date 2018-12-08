@@ -1,10 +1,22 @@
+/*### ID's ###*/
+
 #send {
     display: inline;
-    
 }
 
-#main {
+#whoo {
+    width : 25%;
+}
+
+#container {
+    margin-left: 10%;
+    height: 100%;
+
+}
+
+#typearea {
     /*text-align: center;*/
+    visibility: hidden;
     position: fixed;
     bottom: 10px;
     padding-bottom: 10px;
@@ -13,4 +25,28 @@
     /*margin-left: 100px;*/
     border-top: 3px inset lightgrey;
     width: 100%;
+    bottom: 0;
+}
+
+#sidebar {
+    padding-left: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    border-right: 3px solid lightgrey;
+    background-color: slategray
+}
+
+#usrlist {
+    box-sizing: border-box;
+    width: 100%;
+}
+/*### class ###*/
+
+/*### types ###*/
+
+li {
+    list-style: none;
 }
