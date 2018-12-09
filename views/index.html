@@ -34,15 +34,42 @@
         </div>
 
         <div id="whoo">
-            <input type="text" class="form-control" placeholder="T'es qui fdp ?" id="who">
+            <input type="text" class="form-control" placeholder="T'es qui ?" id="who">
             <button id="register" class="form-control">C'est moi</button>
         </div>
 
     </div>
     <script src="../libs/bootrap/js/bootstrap.js"></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="../libs/js.js"></script>
     <script>
+        var socket = io();
+
+        var usrlist = document.getElementById("usrlist");
+
+        var anonymous
+
+        var who = "Anonymous";
+
+        document.getElementById("register").onclick = function () {
+            who = document.getElementById("who").value;
+
+            document.getElementById("whoo").style.visibility = "hidden";
+
+            document.getElementById("typearea").style.visibility = "visible";
+
+            document.getElementById("chat").style.visibility = "visible";
+
+            io.emit('custom con', who);
+        }
+
+        document.getElementById("send").onclick = function () {
+            //Emit the custom message event
+        }
+
+        io.on('custom con', function(){
+            //append the users list
+        })
+
 
     </script>
 </body>

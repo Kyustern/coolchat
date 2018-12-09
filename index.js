@@ -15,3 +15,6 @@ server.listen(port, function () {
     console.log("Server running on port 3000")
 });
 
+io.on("connection", function(){
+    console.log("IT WORKS");
+});
