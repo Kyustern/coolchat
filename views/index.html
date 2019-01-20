@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../libs/bootrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../libs/mainstyle.css">
+    <link rel="stylesheet" type="text/cs" href="../libs/mainstyle.css">
 </head>
 
 <body>
@@ -22,8 +22,6 @@
 
         <div>
             <ul id="chat">
-                <li>lol</li>
-                <li>bite</li>
             </ul>
         </div>
 
@@ -41,37 +39,8 @@
     </div>
     <script src="../libs/bootrap/js/bootstrap.js"></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script>
-        var socket = io();
+    <script src="/libs/js.js"></script>
 
-        var usrlist = document.getElementById("usrlist");
-
-        var anonymous
-
-        var who = "Anonymous";
-
-        document.getElementById("register").onclick = function () {
-            who = document.getElementById("who").value;
-
-            document.getElementById("whoo").style.visibility = "hidden";
-
-            document.getElementById("typearea").style.visibility = "visible";
-
-            document.getElementById("chat").style.visibility = "visible";
-
-            io.emit('custom con', who);
-        }
-
-        document.getElementById("send").onclick = function () {
-            //Emit the custom message event
-        }
-
-        io.on('custom con', function(){
-            //append the users list
-        })
-
-
-    </script>
 </body>
 
 </html>
